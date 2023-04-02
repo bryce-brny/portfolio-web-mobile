@@ -1,0 +1,228 @@
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 3.5;
+  }
+
+  /* make body narrow */
+  body{
+    max-width: 1000px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+  }
+
+  .current{
+    color: red;
+  }
+
+  header{
+    margin-bottom: 80px;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxes{
+    justify-content: flex-start;
+    line-height: 40px;
+    margin: 20px;
+    padding-left: 8px;
+    background-color: white;
+  }
+
+  p{
+    line-height: 20px;
+  }
+
+  .boximg{
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    /* text-align: center; */
+  }
+
+  input{
+    margin-top: 20px;
+    background-color: tomato;
+    width: 150px;
+    height: 40px;
+    border: 0ch;
+    color: white;
+  }
+
+/* ========================= */
+
+  /* all element in navbar move to right-side */
+  header .container {
+    width: 1000px;
+    justify-content: flex-end;
+  }
+
+  /* all box in one  */
+  header nav {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /* 3 boxs  */
+  header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* separate each div in navbar */
+  header li {
+    padding: 0 20px;
+  }
+
+  /* link a text */
+  header a {
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit;
+    font-weight: bold;
+  }
+
+/* =========================   */
+/* section profile */
+
+  .profile .container{
+    background-color: rgb(255, 255, 255);
+
+  }
+
+
+  .profile .container .boximg  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+  }
+
+  .boximg img{
+    width: 100%;
+    object-fit:cover;
+    width: 250px;
+    height: 160px;
+    margin: 8px auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+  
+  .posts > :first-child {
+    padding-top: 25px;
+    width: 76%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .posts > :nth-child(2) {
+    background-color: rgb(197, 220, 232);
+    /* width: 1000px; */
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    
+  }
+
+  
+  /* featured */
+
+  
+
+  .featured .container{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+  }
+
+  .featured > :first-child {
+    border: 0;
+    margin: 20px auto;
+    margin-bottom: 0;
+    justify-content: flex-start;
+    width: 76%;
+    
+  }
+
+  /* year and dushboard section*/
+
+  .boxes .container{
+    justify-content: flex-start;
+    margin: 16px 4px;
+    border: 0;
+    gap: 16px;
+  }
+
+  .year{
+    background-color: rgb(23, 41, 135);
+    color: white;
+    border-radius: 16px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+
+  }
+
+  .dush{
+    color: gray;
+    padding-top: 2px;
+  }
+  
+
+  
+
+
+  /* footer */
+
+  .icon .container{
+    width: 20%;
+    height: 200px;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 24px;
+    /* display: inline; */
+    padding-bottom: -10px;
+  }
+
+  i{
+    height: 8px;
+  }
+
+  h6{
+    text-align: center;
+  }
+
+  @media (max-width:816px) { 
+    /* l ต่ำกว่าไห้ทำตามนี้ l */
+     .container{
+      flex-wrap: wrap;
+     }
+     header .container{
+      width: 100vw;
+      /* justify-content: center; */
+     }
+
+ }
+
+
+
+
+
